@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hra.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="spusteni" prefHeight="710.0" prefWidth="1002.0">
+         <children>
+            <Button fx:id="buttonPripojit" layoutX="414.0" layoutY="465.0" mnemonicParsing="false" onAction="#pripojSe" prefHeight="41.0" prefWidth="174.0" text="Připojit se" />
+            <Label layoutX="453.0" layoutY="379.0" text="Zadejte své jméno" />
+            <TextField fx:id="textNick" layoutX="427.0" layoutY="408.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cekani" prefHeight="710.0" prefWidth="1002.0" visible="false">
+         <children>
+            <Label layoutX="250.0" layoutY="307.0" text="Čekám na protihráče">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="hra" prefHeight="710.0" prefWidth="1002.0" visible="false">
+         <children>
+            <Separator layoutX="787.0" orientation="VERTICAL" prefHeight="710.0" prefWidth="0.0" />
+            <Separator layoutY="138.0" prefHeight="2.0" prefWidth="787.0" />
+            <Label layoutX="168.0" layoutY="71.0" text="Na tahu je hráč:">
+               <font>
+                  <Font size="22.0" />
+               </font></Label>
+            <Label fx:id="aHrac" layoutX="360.0" layoutY="73.0" text="hráč">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="855.0" layoutY="60.0" text="Body">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <Label fx:id="hrac1" layoutX="858.0" layoutY="176.0" text="hrac1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="body1" layoutX="886.0" layoutY="225.0" text="body" />
+            <Label fx:id="hrac2" layoutX="858.0" layoutY="355.0" text="hrac2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="body2" layoutX="887.0" layoutY="405.0" text="body" />
+            <ImageView fx:id="im1" fitHeight="116.0" fitWidth="97.0" layoutX="143.0" layoutY="183.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@xx.jpg" />
+                </image>
+            </ImageView>
+            <ImageView fx:id="im2" fitHeight="116.0" fitWidth="97.0" layoutX="276.0" layoutY="182.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im3" fitHeight="116.0" fitWidth="97.0" layoutX="417.0" layoutY="182.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im4" fitHeight="116.0" fitWidth="97.0" layoutX="547.0" layoutY="186.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im8" fitHeight="116.0" fitWidth="97.0" layoutX="547.0" layoutY="329.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im7" fitHeight="116.0" fitWidth="97.0" layoutX="417.0" layoutY="328.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im6" fitHeight="116.0" fitWidth="97.0" layoutX="276.0" layoutY="328.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im5" fitHeight="116.0" fitWidth="97.0" layoutX="143.0" layoutY="329.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im12" fitHeight="116.0" fitWidth="97.0" layoutX="547.0" layoutY="464.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im11" fitHeight="116.0" fitWidth="97.0" layoutX="417.0" layoutY="463.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im10" fitHeight="116.0" fitWidth="97.0" layoutX="276.0" layoutY="463.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="im9" fitHeight="116.0" fitWidth="97.0" layoutX="143.0" layoutY="464.0" onMouseClicked="#tah" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@xx.jpg" />
+               </image>
+            </ImageView>    
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
